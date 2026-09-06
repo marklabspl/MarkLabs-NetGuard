@@ -1,6 +1,14 @@
 # MarkLabs.pl NetGuard
 
-MarkLabs.pl NetGuard is a self-contained network monitoring and power-recovery appliance. It checks configurable network targets, evaluates dependency-aware recovery rules, and can power-cycle one of four connected devices when the configured evidence indicates a failure.
+**ESP32 Ethernet network watchdog and automatic four-channel power recovery controller for routers, switches, access points, servers, cameras, and other network infrastructure.**
+
+[![Firmware CI](https://github.com/marklabspl/MarkLabs-NetGuard/actions/workflows/firmware-ci.yml/badge.svg)](https://github.com/marklabspl/MarkLabs-NetGuard/actions/workflows/firmware-ci.yml)
+[![Pre-release](https://img.shields.io/github/v/release/marklabspl/MarkLabs-NetGuard?include_prereleases&label=pre-release)](https://github.com/marklabspl/MarkLabs-NetGuard/releases)
+[![Master](https://img.shields.io/badge/master-WT32--ETH01-2196f3)](master/)
+[![Power module](https://img.shields.io/badge/power-SONOFF%204CHR3-00bcd4)](power-module/)
+[![License](https://img.shields.io/badge/license-proprietary-64748b)](LICENSE)
+
+MarkLabs.pl NetGuard is a self-contained network monitoring and power-recovery appliance for unattended LAN infrastructure. It checks configurable IP addresses and services, evaluates dependency-aware recovery rules, and can safely power-cycle one of four connected devices when the configured evidence indicates a failure.
 
 The system consists of two controllers:
 
