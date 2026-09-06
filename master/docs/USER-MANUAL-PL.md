@@ -16,7 +16,7 @@ odbiornikiem przypisanym do CH1–CH4.
    działającej z prędkością 115200 baud.
 3. Otwórz `http://<adres-ip>/`.
 4. Zaloguj się nazwą `admin` i początkowym hasłem `admin`.
-5. W zakładce **Sieć** ustaw własne hasło. Hasło musi mieć 5–32 znaki.
+5. W zakładce **Sieć** ustaw własne hasło. Hasło musi mieć 8–32 znaki.
 
 Po pięciu nieudanych logowaniach panel blokuje kolejne próby na 60 sekund.
 

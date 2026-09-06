@@ -14,7 +14,7 @@ observation-only; a powered device is a physical load mapped to CH1–CH4.
 2. Find the DHCP address in the router or on the Master console at 115200 baud.
 3. Open `http://<ip-address>/`.
 4. Sign in with username `admin` and initial password `admin`.
-5. Set a private password on **Network**. It must contain 5–32 characters.
+5. Set a private password on **Network**. It must contain 8–32 characters.
 
 After five failed sign-ins, the panel blocks further attempts for 60 seconds.
 
