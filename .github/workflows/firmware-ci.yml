@@ -1,0 +1,35 @@
+name: Firmware CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install PlatformIO
+        run: python -m pip install platformio
+      - name: Run host regression tests
+        run: |
+          python master/tests/run_regression_tests.py
+          python power-module/tests/run_logic_tests.py
+          python scripts/verify_release.py
+      - name: Run native Power protocol tests
+        run: platformio test -d power-module -e native
+      - name: Build Power Module
+        run: platformio run -d power-module -e sonoff_4chr3
+      - name: Build Master
+        run: platformio run -d master -e wt32_eth01
+      - name: Upload build outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: netguard-firmware
+          if-no-files-found: error
+          path: |
+            master/.pio/build/wt32_eth01/firmware.bin
+            power-module/.pio/build/sonoff_4chr3/firmware.bin

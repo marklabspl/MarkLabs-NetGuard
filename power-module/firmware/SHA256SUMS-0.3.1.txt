@@ -1,0 +1,1 @@
+882b674848e5eecf76fbaeb2e160c70d010e52f5207c20281e42e3cf1fffa0b5  netguard-sonoff-4chr3-v0.3.1.bin

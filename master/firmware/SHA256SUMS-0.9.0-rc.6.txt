@@ -1,0 +1,2 @@
+795171c7c5e27cc67c0857ffd5df2676094050449d8556760407cb0b6d848a21  netguard-master-wt32-eth01-v0.9.0-rc.6-app.bin
+3a161b37f6b00bb62e5dcb8ce11a224eab6f74d2b94ca35334c58ad68e8fc907  netguard-master-wt32-eth01-v0.9.0-rc.6-merged.bin
